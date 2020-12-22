@@ -34,8 +34,7 @@ public:
   // PROMISES:
   //   Prints items in list on a single line, with commas separating
   //   the items and square brackets marking the ends of the list.
-  // NOTE:
-  //   This is different from the print function presented in lectures.
+
 
 private:
   Node *headM;

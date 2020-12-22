@@ -48,7 +48,6 @@ void OLList::insert(const ListItem& itemA)
     if (headM == 0 || itemA <= headM->item ) {
         new_node->next = headM;
         headM = new_node;
-        // point one
     }
     else {
         Node *before = headM;      // will point to node in front of new node
@@ -59,15 +58,11 @@ void OLList::insert(const ListItem& itemA)
         }
         new_node->next = after;
         before->next = new_node;
-        // point two
     }
 }
 
 void OLList::remove(const ListItem& itemA)
 {
-	
-	
-
     // if list is empty, do nothing
     if (headM == 0 || itemA < headM->item)
         return;
@@ -97,10 +92,7 @@ void OLList::remove(const ListItem& itemA)
 			delete maybe_doomed;
 			
 		}
-        // point three
     }
-    // the remaining part of this function is missing. As part of exercise A
-    // students are supposed to complete the rest of the definition of this function.
 }
 
 void OLList::destroy(){
